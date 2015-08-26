@@ -14,3 +14,5 @@ config.mk
 #Nordic libs
 s110
 nrf51_sdk
+
+/nrf_mbs.*

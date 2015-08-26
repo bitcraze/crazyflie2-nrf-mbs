@@ -1,5 +1,4 @@
-Crazyflie 2.0 nRF51 Master Boot Switch
-======================================
+# Crazyflie 2.0 nRF51 Master Boot Switch [![Build Status](https://travis-ci.org/bitcraze/crazyflie2-nrf-mbs.svg)](https://travis-ci.org/bitcraze/crazyflie2-nrf-mbs)
 
 This program is part of Crazyflie 2.0. It runs at nRF51 early startup and
 measure the time the ON/OFF button is pressed. This program is also in
@@ -8,8 +7,13 @@ charge of reprogramming the bootloader and softdevice.
 See readme.md of the crazyflie-nrf-firmware project for information about
 the nrf flash architecture.
 
-Compiling this project require to download and extract the Nordic Semiconductor
-S110 BLE stack package in the s110 folder. See s110/readme for exact version.
+Compiling requires the nRF51_SDK and S110 packages.
+
+        ./tools/build/download_deps.sh
+
+will download the zip and unpack is.
+If you want to download manually from the Nordic semiconductor website, you
+will find the details in s110/readme.
 
 License
 -------
