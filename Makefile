@@ -31,12 +31,16 @@ LDFLAGS+= --specs=rdimon.specs -lc -lrdimon
 CFLAGS+= -DSEMIHOSTING
 endif
 
+ifdef PLATFORM
+CFLAGS += -DPLATFORM_$(PLATFORM)
+endif
+
 LDFLAGS += -T gcc_nrf51_mbs_xxaa.ld 
 
 
-OBJS += src/main.o src/crc.o gcc_startup_nrf51.o system_nrf51.o
+OBJS += src/main.o src/crc.o src/platformString.o gcc_startup_nrf51.o system_nrf51.o
 
-all: $(PROGRAM).elf $(PROGRAM).hex
+all: $(PROGRAM).elf $(PROGRAM).hex $(PROGRAM).bin
 	arm-none-eabi-size $(PROGRAM).elf
 
 $(PROGRAM).hex: $(PROGRAM).elf
