@@ -16,7 +16,7 @@ OPENOCD_TARGET    ?= target/nrf51_stlink.tcl
 OPENOCD_CMDS      ?=
 O                 ?= -O3
 
-INCLUDES= -I include/nrf -I s110/s110_nrf51822_7.0.0_API/include -I include/cm0 -I include/
+INCLUDES= -I include/nrf -I s110/s110_nrf51822_7.3.0_API/include -I include/cm0 -I include/
 
 PROCESSOR = -mcpu=cortex-m0 -mthumb
 NRF= -DNRF51
