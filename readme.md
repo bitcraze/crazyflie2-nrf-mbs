@@ -1,4 +1,4 @@
-# Crazyflie 2.0 nRF51 Master Boot Switch [![Build Status](https://travis-ci.org/bitcraze/crazyflie2-nrf-mbs.svg)](https://travis-ci.org/bitcraze/crazyflie2-nrf-mbs)
+# Crazyflie 2.0 nRF51 Master Boot Switch [![CI](https://github.com/bitcraze/crazyflie2-nrf-mbs/workflows/CI/badge.svg)](https://github.com/bitcraze/crazyflie2-nrf-mbs/actions?query=workflow%3ACI)
 
 This program is part of Crazyflie 2.0. It runs at nRF51 early startup and
 measure the time the ON/OFF button is pressed. This program is also in
