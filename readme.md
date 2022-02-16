@@ -29,3 +29,12 @@ Compiling
 
 To compile arm-none-eabi- tools from https://launchpad.net/gcc-arm-embedded
 should be in the path.
+
+## Contribute
+Go to the [contribute page](https://www.bitcraze.io/contribute/) on our website to learn more.
+
+### Run test
+Run the automated test locally to test your code
+
+./tools/build/build
+
